@@ -2,10 +2,13 @@
 
 int main() // Will display the numbers a user types multipliued by 2
 {
-  std::cout << "Type a number: \n"; 
-  int num { };
-  std::cin >> num; // Recieves user input  
-  std::cout << "Double is:" << num * 2<< "\n"; 
-  std::cout << "Triple is: " << num * 3 << "\n";
+  int x {};
+  int y {};
+  std::cout << "Enter an integer:\n";
+  std::cin >> x;
+  std::cout << "Enter another integer\n";\
+  std::cin >> y;
+  std::cout << x << " + " << y << " = " << x + y << "\n";
+  std::cout << x << " - " << y << " = " << x - y << "\n";
   return 0;
 }
