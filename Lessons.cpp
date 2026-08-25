@@ -1,14 +1,20 @@
-#include <iostream>
+#include <iostream>\
 
+
+int getNumber ()
+{
+  int num {};
+  std::cout << "Enter an integer: \n";
+  std::cin >> num;
+  return num;
+}
+ void doubleNumber (int num)
+{ 
+  std::cout << "Your number doubled is: " << num * 2 << "\n";
+}
 int main() // Will display the numbers a user types multipliued by 2
 {
-  int x {};
-  int y {};
-  std::cout << "Enter an integer:\n";
-  std::cin >> x;
-  std::cout << "Enter another integer\n";\
-  std::cin >> y;
-  std::cout << x << " + " << y << " = " << x + y << "\n";
-  std::cout << x << " - " << y << " = " << x - y << "\n";
-  return 0;
+ doubleNumber
+ (getNumber());
+ return 0;
 }
